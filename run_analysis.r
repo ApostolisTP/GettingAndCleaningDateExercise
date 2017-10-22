@@ -1,5 +1,5 @@
 
-## setwd("path_goes_here")
+setwd("C:/Users/Apostolis/Documents/UCI HAR Dataset")
 
 
 ## step 1 - Merges the training and the test sets to create one data set.
@@ -55,5 +55,5 @@ aggr.data <- aggregate(data.mean.std[, 3:ncol(data.mean.std)],
                                label = data.mean.std$label), mean)
 
 # Writing the data in a separete file
-write.table(format(aggr.data, scientific=T), "tidydataset.csv",
-            row.names=F, col.names=F, quote=2)
+write.table(format(aggr.data, scientific=T), "tidydataset.txt",
+            row.names=FALSE, col.names=FALSE, quote=2)
